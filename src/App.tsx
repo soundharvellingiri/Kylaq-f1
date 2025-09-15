@@ -24,7 +24,7 @@ function App() {
       case 'market':
         return <MarketPrices />;
       case 'chat':
-        return <BotpressWidget />; // Use Botpress widget instead of custom chat
+        return <BotpressWidget />;
       default:
         return <Dashboard />;
     }
@@ -35,21 +35,21 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex">
-      {/* Sidebar / Navigation */}
+    <div className="min-h-screen bg-gray-100">
+      {/* Top Navbar */}
       <Navigation
         currentPage={currentPage}
         onPageChange={setCurrentPage}
         isMenuOpen={isMenuOpen}
         onToggleMenu={handleToggleMenu}
       />
-      
-      {/* Main Content */}
-      <main className="flex-1 lg:ml-0 p-4 lg:p-6">
+
+      {/* Main Content (padding to avoid overlap with navbar) */}
+      <main className="pt-20 px-4 lg:px-6">
         {renderCurrentPage()}
       </main>
 
-      {/* Always include Botpress widget globally */}
+      {/* Botpress Widget (global) */}
       <BotpressWidget />
     </div>
   );
