@@ -84,7 +84,22 @@ const MarketPrices: React.FC = () => {
       minPrice: 3500,
       maxPrice: 4500,
       unit: '₹/quintal'
-    }
+    },
+{
+      cropName: 'Maize',
+      currentPrice: 2400,
+      previousPrice: 2000,
+      trend: 'up',
+      marketLocation: 'Rourkela',
+      lastUpdated: '30 mins ago',
+      minPrice: 1500,
+      maxPrice: 4000,
+      unit: '₹/quintal'
+    },
+
+
+
+
   ];
 
   const getTrendIcon = (trend: string) => {
@@ -111,8 +126,8 @@ const MarketPrices: React.FC = () => {
     return { change, percentage };
   };
 
-  const states = ['Tamil Nadu', 'Karnataka', 'Maharashtra', 'Punjab', 'Haryana', 'Uttar Pradesh'];
-  const crops = ['All Crops', 'Rice', 'Wheat', 'Cotton', 'Sugarcane', 'Turmeric', 'Vegetables'];
+  const states = ['Tamil Nadu', 'Karnataka', 'Maharashtra', 'Punjab', 'Haryana', 'Uttar Pradesh','Jharkhand'];
+  const crops = ['All Crops', 'Rice', 'Wheat', 'Cotton', 'Sugarcane', 'Turmeric', 'Vegetables','Maize'];
 
   const filteredPrices = marketPrices.filter(price => {
     if (selectedCrop === 'All Crops') return true;
