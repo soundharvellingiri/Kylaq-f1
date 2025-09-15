@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import Dashboard from './components/Dashboard';
-import Profile from './components/Profile';
 import CropRecommendation from './components/CropRecommendation';
 import FertilizerGuide from './components/FertilizerGuide';
 import PestDetection from './components/PestDetection';
