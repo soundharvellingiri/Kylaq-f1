@@ -16,7 +16,6 @@ const Navigation: React.FC<NavigationProps> = ({
 }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: Home },
-    { id: 'profile', label: 'Profile', icon: User },
     { id: 'recommendations', label: 'Crop Guide', icon: Brain },
     { id: 'fertilizer', label: 'Fertilizer', icon: Sprout },
     { id: 'pest-detection', label: 'Pest Control', icon: Bug },
