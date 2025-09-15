@@ -20,7 +20,6 @@ const Navigation: React.FC<NavigationProps> = ({
     { id: 'fertilizer', label: 'Fertilizer', icon: Sprout },
     { id: 'pest-detection', label: 'Pest Control', icon: Bug },
     { id: 'market', label: 'Market Prices', icon: TrendingUp },
-    { id: 'chat', label: 'Support', icon: MessageCircle },
   ];
 
   return (
