@@ -83,17 +83,17 @@ const PestDetection: React.FC = () => {
     {
       name: 'Brown Plant Hopper',
       crops: ['Rice'],
-      image: 'https://images.pexels.com/photos/8142047/pexels-photo-8142047.jpeg?auto=compress&cs=tinysrgb&w=200&h=200'
+      image: 'https://tse1.mm.bing.net/th/id/OIP.A-K61QNtVZ54MLPLiBUo2wHaFj?pid=Api&P=0&h=180'
     },
     {
       name: 'Bollworm',
       crops: ['Cotton'],
-      image: 'https://images.pexels.com/photos/8142047/pexels-photo-8142047.jpeg?auto=compress&cs=tinysrgb&w=200&h=200'
+      image: 'https://infonet-biovision.org/sites/default/files/plant_health/cropsfruitsvegetables/1019_0.jpeg  '
     },
     {
       name: 'Stem Borer',
       crops: ['Rice', 'Sugarcane'],
-      image: 'https://images.pexels.com/photos/8142047/pexels-photo-8142047.jpeg?auto=compress&cs=tinysrgb&w=200&h=200'
+      image: 'https://tse2.mm.bing.net/th/id/OIP.A8zBZ_QVcy5tM5m5x9I89wHaFH?pid=Api&P=0&h=180'
     }
   ];
 
