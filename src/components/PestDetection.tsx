@@ -78,7 +78,7 @@ const PestDetection: React.FC = () => {
     {
       name: 'Aphids',
       crops: ['Rice', 'Wheat', 'Cotton'],
-      image: 'https://images.pexels.com/photos/8142047/pexels-photo-8142047.jpeg?auto=compress&cs=tinysrgb&w=200&h=200'
+      image: 'https://a-z-animals.com/media/2022/07/aphids.jpg'
     },
     {
       name: 'Brown Plant Hopper',
