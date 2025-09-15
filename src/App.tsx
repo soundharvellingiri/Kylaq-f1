@@ -5,7 +5,7 @@ import CropRecommendation from './components/CropRecommendation';
 import FertilizerGuide from './components/FertilizerGuide';
 import PestDetection from './components/PestDetection';
 import MarketPrices from './components/MarketPrices';
-import ChatSupport from './components/ChatSupport';
+import BotpressWidget from './components/BotpressWidget';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('dashboard');
@@ -24,7 +24,7 @@ function App() {
       case 'market':
         return <MarketPrices />;
       case 'chat':
-        return <ChatSupport />;
+        return <BotpressWidget />; // Use Botpress widget instead of custom chat
       default:
         return <Dashboard />;
     }
@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex">
+      {/* Sidebar / Navigation */}
       <Navigation
         currentPage={currentPage}
         onPageChange={setCurrentPage}
@@ -43,9 +44,13 @@ function App() {
         onToggleMenu={handleToggleMenu}
       />
       
+      {/* Main Content */}
       <main className="flex-1 lg:ml-0 p-4 lg:p-6">
         {renderCurrentPage()}
       </main>
+
+      {/* Always include Botpress widget globally */}
+      <BotpressWidget />
     </div>
   );
 }

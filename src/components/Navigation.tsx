@@ -26,7 +26,7 @@ const Navigation: React.FC<NavigationProps> = ({
     <>
       {/* Mobile Header */}
       <div className="lg:hidden bg-green-600 text-white p-4 flex justify-between items-center">
-        <h1 className="text-lg font-bold">Crop Portal</h1>
+        <h1 className="text-lg font-bold">Crop IQ</h1>
         <button onClick={onToggleMenu} className="p-2">
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -43,7 +43,7 @@ const Navigation: React.FC<NavigationProps> = ({
         ${isMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
       `}>
         <div className="p-6 border-b border-gray-200">
-          <h2 className="text-xl font-bold text-green-700">🌱 Crop Portal</h2>
+          <h2 className="text-xl font-bold text-green-700">🌱 Crop IQ</h2>
           <p className="text-sm text-gray-600 mt-1">AI Farming Assistant</p>
         </div>
 
